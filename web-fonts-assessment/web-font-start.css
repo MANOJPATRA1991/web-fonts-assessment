@@ -215,12 +215,11 @@ a {
   outline: none;
   text-align: center;
 }
-
-a:link, a:visited {
+a:link, a:visited, a:focus {
   color: #a66;
 }
 
-a:focus, a:hover {    
+a:hover {    
   text-decoration: none; 
   color: #a30;
 }
@@ -261,33 +260,21 @@ nav ul {
 }
 
 nav ul li{
+  padding-left: 0;
   border: 1px solid #a66;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
-nav ul li{
-  margin-bottom: 10px;
+nav ul li:hover{
+  background: limegreen;
+  color: white;
 }
 
 nav a {
   outline: none;
   text-decoration: none;
-  width: 19.5%;
-  margin-right: -0.625%;
   text-align: center;
   line-height: 3;
   color: black;
-}
-
-nav a:link, a:visited {
-  color: #a66;
-}
-
-nav a:focus, a:hover {    
-  text-decoration: none; 
-  background: #a66;
-  color: white;
-}
-
-nav a:active {
-  color: blue;
 }
