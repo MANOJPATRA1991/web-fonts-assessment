@@ -1,0 +1,293 @@
+/* General setup */
+
+@font-face {
+    font-family: 'chunkfiveroman';
+    src: url('fonts/chunkfive-webfont.woff2') format('woff2'),
+         url('fonts/chunkfive-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'rubikblack';
+    src: url('fonts/rubik-black-webfont.woff2') format('woff2'),
+         url('fonts/rubik-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'rubikblack';
+    src: url('fonts/rubik-blackitalic-webfont.woff2') format('woff2'),
+         url('fonts/rubik-blackitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'rubik';
+    src: url('fonts/rubik-bold-webfont.woff2') format('woff2'),
+         url('fonts/rubik-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'rubik';
+    src: url('fonts/rubik-bolditalic-webfont.woff2') format('woff2'),
+         url('fonts/rubik-bolditalic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'rubik';
+    src: url('fonts/rubik-italic-webfont.woff2') format('woff2'),
+         url('fonts/rubik-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'rubiklight';
+    src: url('fonts/rubik-light-webfont.woff2') format('woff2'),
+         url('fonts/rubik-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'rubiklight';
+    src: url('fonts/rubik-lightitalic-webfont.woff2') format('woff2'),
+         url('fonts/rubik-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'rubikmedium';
+    src: url('rubik-medium-webfont.woff2') format('woff2'),
+         url('rubik-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'rubikmedium';
+    src: url('rubik-mediumitalic-webfont.woff2') format('woff2'),
+         url('rubik-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'rubikregular';
+    src: url('rubik-regular-webfont.woff2') format('woff2'),
+         url('rubik-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+  font-size: 10px;
+  line-height: 2;
+  letter-spacing: 0.2em;
+  word-spacing: 0.5em;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+header h1{
+  font-family: 'chunkfiveroman';
+  font-size: 3.5em;
+  text-align: center;
+  letter-spacing: 0.35em;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+/*section*/
+section h2{
+  font-family: 'chunkfiveroman';
+  font-size: 2em;
+  letter-spacing: 0.35em;
+}
+
+aside h2{
+  font-family: 'chunkfiveroman';
+  font-size: 2em;
+  letter-spacing: 0.35em;
+}
+
+p:nth-child(2){
+  text-indent: 20px;
+}
+
+p:nth-child(5){
+  text-indent: 20px;
+}
+
+p{
+  font-family: 'rubiklight';
+  font-size: 1.5em;
+}
+
+/*links*/
+a {
+  outline: none;
+  text-align: center;
+}
+
+a:link, a:visited {
+  color: #a66;
+}
+
+a:focus, a:hover {    
+  text-decoration: none; 
+  color: #a30;
+}
+
+a:active {
+  background: blue;
+  color: white;
+}
+
+a[href*="http"] {
+  background: url('https://mdn.github.io/learning-area/css/styling-text/typesetting-a-homepage-start/external-link-52.png') no-repeat 100% 0;
+  background-size: 16px 16px;
+  padding-right: 19px;
+}
+
+ul{
+  font-family: 'rubiklight';
+  list-style: square;
+  margin: -10px  0;
+  font-size: 1.5em;
+}
+
+ul li{
+  padding-left: 0.75rem;
+}
+
+ol{
+  font-family: 'rubiklight';
+  margin: -10px  0;
+  list-style: lower-alpha;
+  font-size: 1.5em;
+  margin-left: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-top: 1rem;
+}
+
+nav ul li{
+  border: 1px solid #a66;
+}
+
+nav ul li{
+  margin-bottom: 10px;
+}
+
+nav a {
+  outline: none;
+  text-decoration: none;
+  width: 19.5%;
+  margin-right: -0.625%;
+  text-align: center;
+  line-height: 3;
+  color: black;
+}
+
+nav a:link, a:visited {
+  color: #a66;
+}
+
+nav a:focus, a:hover {    
+  text-decoration: none; 
+  background: #a66;
+  color: white;
+}
+
+nav a:active {
+  color: blue;
+}
